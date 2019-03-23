@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Academy - Education Course Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+.cList li {
+	color: #4f493f;
+	line-height: 30px;
+	padding-left: 25px;
+	list-style:none;
+	font-weight:normal;
+	font-size:12px;
+	margin-left:-15px;
+}
+      
+
+.zebra td, .zebra th {
+    padding: 10px;
+	border: solid #ccc 1px;  
+}
+
+.zebra tbody tr:nth-child(even) {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+}
+
+.zebra th {
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eee));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #eee);
+    background-image:    -moz-linear-gradient(top, #f5f5f5, #eee);
+    background-image:     -ms-linear-gradient(top, #f5f5f5, #eee);
+    background-image:      -o-linear-gradient(top, #f5f5f5, #eee); 
+    background-image:         linear-gradient(top, #f5f5f5, #eee);
+	    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.zebra th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;  
+}
+
+.zebra th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.zebra th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.zebra tfoot td {
+    border-bottom: 0;
+    border-top: 1px solid #fff;
+    background-color: #f1f1f1;  
+}
+
+.zebra tfoot td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.zebra tfoot td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.zebra tfoot td:only-child{
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+}</style>
+
+</head>
+
+<body>
+    <!-- ##### Preloader ##### -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+       <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                            <div class="academy-logo">
+                                <a href="index.html"><img src="img/bg-img/gpt-logo.jpg" height="110" width="110"></a>
+                            </div>
+                            <div class="heading1">
+                                <h2>Government Polytechnic, Thane. </h2>
+                                <p>Established 1985 (Government of Maharashtra.)</p>
+                            </div>
+                            <div class="login-content">
+                                <a href="#">Register / Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+         <div class="academy-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="academyNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="abtus.html">About Us</a></li>
+                                    <li><a href="news.html">News</a></li>
+                                    <li><a href="index.html">Grievance</a></li>
+                                    <li><a href="#">Departments</a>
+                                        <div class="megamenu text-center">
+                                        <ul class="single-mega cn-col-4">
+                                            <li><a href="index.html">Chemical Engineering</a></li>
+                                            <li><a href="about-us.html">Civil Engineering</a></li>
+                                            <li><a href="index.html">Mechanical Engineering</a></li>
+                                        </ul>
+                                            
+                                        <ul class="single-mega cn-col-4">
+                                            <li><a href="it.html">Information Technology</a></li>
+                                            <li><a href="comp.html">Computer Engineering</a></li>
+                                            <li><a href="blog.html">Travel & Tourism</a></li>
+                                            
+                                        </ul>
+                                                                            </div>
+                                    </li>
+                                    <li><a href="#">Students corner</a>
+                                        <div class="megamenu">
+                                            <ul class="single-mega text-center cn-col-4">
+                                                <li><a href="sports.html">Annual Sports 2018-2019</a></li>
+                                                <li><a href="#">Annual Gathering 2018-2019</a></li>
+                                              </ul>
+                                           
+                                        </div></li>
+                                    <li><a href="course.html">Facilities</a>
+                                     <div class="megamenu ">
+                                        <ul class="single-mega cn-col-4 text-center">
+                                            <li><a href="library.html">Library</a></li>
+                                            <li><a href="gymkhana.html">Gymkhana</a></li>
+                                        </ul>
+                                    </div>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+        
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/computer.jpg);">
+        <div class="bradcumbContent">
+            <h2>Computer Engineering</h2>
+        </div>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### About Us Area Start ##### -->
+    <section class="about-us-area mt-50 section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
+                        <span>Government Polytechnic, Thane</span>
+                        <h3>Department</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                    <h3 class="text-center">Vision</h3><br>
+                    <p>To develop self-relevant and socially conscious engineer with computing skill who can contribute to social and economic growth of the society.</p>
+             
+                </div>
+                 <div class="col-12 col-md-6 wow fadeInUp text-center" data-wow-delay="400ms">
+                    <h3>Mission</h3><br>
+                    <p>Our department will supply competent supervisory level, human resources in the field of Computer Hardware and Networking and good Programmers and Web Developers to the IT Industry.</p>
+             
+                </div>
+            
+                      <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                    <h3 class="text-center">Academics</h3><br>
+                    <li style="list-style-type: disc">Academic Year 2018-19</li>
+                    <li style="list-style-type: disc">Syllabus</li>
+                    <li style="list-style-type: disc">Timetable</li>
+             
+                </div> 
+                
+               <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="500ms">
+                    <h3 style="text-align: center;">Events</h3><br>
+                    <ul style="position: relative;left: 7%;">
+                    <li style="list-style-type: disc">Industrial Visit at All India Radio</li>
+                    <li style="list-style-type: disc">LAN Gaming Competition organied by SPACE</li>
+                    <li style="list-style-type: disc">More will be added soon</li>
+                    
+                    </ul>
+                </div>
+                
+                
+                <div style="padding-top: 50px" class="col-12 col-md-20 wow fadeInUp" data-wow-delay="400ms">
+                            
+                    <h3 style="text-align: center">Laboratory </h3><br>
+                    
+                <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="zebra">
+<thead>
+<tr>
+	<th width="20%">Laboratory Name</th>
+	<th width="30%">Equipment List</th>
+	<th width="1%">Photo</th>               
+</tr>
+</thead>
+  <tr>
+    <td>Networking Lab (224)</td>
+    <td>
+    	<ul class="cList pointLi">
+    		<li>P. C. Lenovo Make with Monitor</li>
+    		<li>UPS 5KVA</li>
+    		<li>Laser Printer Samsung 3050</li>
+    		<li>HCL UN-Managed Switch 24 - Port</li>
+    		<li>HCL Rack 19"</li>
+    	</ul>
+    </td>
+    <td><img src="PICS/coLAB1.JPG" width="300" height="275"/></td>
+  </tr>
+  
+  <tr>
+    <td>Project Lab (217)</td>
+    <td>
+    	<ul class="cList pointLi">
+    		<li>Multimedia Projector-Richo</li>
+    		<li>Dell Desk Top PC</li>
+    		<li>P. C. Lenovo Make</li>
+    		<li>HCL UN-Managed Switch 24 - Port</li>
+    		<li>HCL Rack 19"</li>
+    	</ul>
+    </td>
+    <td><img src="PICS/coLAB2.JPG" width="300" height="275"/></td>
+  </tr>
+
+    <tr>
+    <td>Programming Lab (221)</td>
+    <td>
+    	<ul class="cList pointLi">
+    		<li>HP LaserJet Printer 1020</li>
+    		<li>P. C. Lenovo Make with Monitor</li>
+    		<li>UPS 5KVA</li>
+    		<li>HCL UN-Managed Switch 24 - Port</li>
+    		<li>HCL Rack 19"</li>
+    		<li>HCL Rack 19"</li>
+    		<li>P. C. Lenovo Think Center Make Intel Core i5</li>
+    		<li>P. C. HP Make Intel Core i5</li>
+
+    	</ul>
+    </td>
+    <td><img src="PICS/coLAB3.JPG" width="300" height="275"/></td>
+  </tr>
+
+  
+</table>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+  
+    <section class="teachers-area section-padding-0-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
+                        <h3>Faculty & Staff</h3>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="400ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/RLL.JPG" alt="">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>Mr. R. L. Londhe</h5>
+                            <span>B. E.(Computer Engineering) <br>Email - rllondhe@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/DDC.JPG" alt="" style="height: 190px;">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>Mrs D. D. Chande</h5>
+                            <span>M. E. (I. T.) <br>Email - darshanachande<br>@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/PSM.JPG" alt="" style="height: 190px;">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>Mrs. P. S. Mahajan</h5>
+                            <span>B. E.(Computer) <br>Email - pmahajan2013<br>@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/VRS.JPG" alt="">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>Mr. V. R. Sawant</h5>
+                            <span>Head of Information Technology Department</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="600ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/tea3.jpg" alt="">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>James Hogan</h5>
+                            <span>HTML Proffesor</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Teachers -->
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="single-teachers-area text-center mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <!-- Thumbnail -->
+                        <div class="teachers-thumbnail">
+                            <img src="img/bg-img/tea4.jpg" alt="">
+                        </div>
+                        <!-- Meta Info -->
+                        <div class="teachers-info mt-30">
+                            <h5>Claudia Williams</h5>
+                            <span>Marketing Proffesor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+            
+        <div class="bottom-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
