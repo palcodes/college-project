@@ -6,7 +6,7 @@ def index(request):
     return render(request, 'mainweb/index.html')
 
 def about(request):
-    HttpResponse("<h1>Hey this is the about page</h1>")
+    return render(request, 'mainweb/abtus.html')
 
 def comp(request):
-    HttpResponse("<h1>Hey this is the comps page</h1>")
+    return render(request, 'mainweb/comp.html')
