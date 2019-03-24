@@ -4,7 +4,9 @@ from blogs.models import News, Posts
 
 # Create your views here.
 def index(request):
-    return render(request, 'mainweb/index.html')
+    postlist = Posts.objects.all()
+    context = { 'postlist' : postlist }
+    return render(request, 'mainweb/index.html', context)
 
 def about(request):
     return render(request, 'mainweb/abtus.html')
@@ -14,3 +16,6 @@ def news(request):
     context = { 'newslist' : newslist }
     return render(request, 'mainweb/news.html', context)
     # return HttpResponse("{& for news in newslist &}  <h1>{{newslist.news}} </h1> {& endfor &}")
+
+def contact(request):
+    return HttpResponse("<h1>Contact Form</h1>") 

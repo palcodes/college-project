@@ -234,15 +234,16 @@
             <div class="row">
                 <div class="col-12">
                     <!-- news from database -->
-                    <!-- news start -->
-                  <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">
+                    
+                <!-- news start -->
+                    <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">
                     25th - 29th JUNE 2018
                     </li><br>
-                    <h5>ONE WEEK AICTE & ISTE APPROVED STTP ON "RESEARCH METHODOLOGY & IT'S APPLICATION" APPROVED BY AICTE & INDIAN SOCIETY FOR TECHNICAL EDUCATION.</h5>  
+                    <h5>One week early, all the exams are being conducted to be in sync with the Government rules.</h5>  
                     <hr> 
-                    <!-- news end  -->
+                <!-- news end  -->
 
-                     <!-- news start -->
+                <!-- news start -->
                     {% for News in newslist %}
                     <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">
                         {{ News.news_date }}
@@ -250,7 +251,7 @@
                     <h5>{{ News.news_content }}</h5>  
                         <hr> 
                         {% endfor %}
-                        <!-- news end  -->
+                <!-- news end  -->
       
                 
                 </div>

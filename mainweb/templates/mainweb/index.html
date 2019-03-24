@@ -283,14 +283,12 @@
                          <div class="links">
                             <h2>Latest Updates</h2>
                             <hr>
-                             <marquee direction="up" onmouseover="this.stop();"onmouseout="this.start();">
-<p><a target="_blank" href="ofiles/WINTER 2018.pdf">WINTER 2018 MSBTE FINAL TIME TABLE</a></p>     <hr>                          <p><a target="_blank" href="ofiles/MSBTE Online Theory Exam W18 Time Table.pdf">MSBTE Online Theory Exam W18 Time Table.pdf</a></p>
-                                 <p><a target="_blank" href="ofiles/LC.pdf">DOCUMENTS REQUIRED FOR LC<img width="25" height="16" src="images/new.gif"></a></p>
-                                 <p><a target="_blank" href="PICS/bdc.jpg">Blood Donation camp organized on 15/02/2018</a></p>
-                           <p><a target="_blank" href="ofiles/CHALAN.pdf"> BANK CHALAN FOR STUDENTS </a></p><hr>
-                                 <p><a target="_blank" href="PICS/gan.jpg">Granthalaya Pradarshan on Gandhi Jayanti</a></p><hr>
-                                 <p><a target="_blank" href="PICS/ori.jpg">Orientation Program for First Year Students</a></p><hr>
-                             </marquee>
+                            <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()">
+                            {% for Posts in postlist %} 
+                                 <h3><a target="_blank" href="#">{{ Posts.posts_title }}</a></h3>
+                                 <p>{{ Posts.posts_content }}</p>
+                            {% endfor %}
+                        </marquee>
                         </div>
                     </div>
                 </div>
@@ -370,7 +368,7 @@
                 <div class="col-12 col-md-4">
                     <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="700ms">
                         <div class="testimonial-thumb">
-                            <img src="/static/img/core-img/naiksir.png" height="90" width="100">
+                            <img src="/static/img/core-img/naiksir.png" height="90" width="80">
                         </div>
                         <div class="testimonial-content">
                             <h5>Shri. Pramod A. Naik</h5>
@@ -406,7 +404,7 @@
                         <p><a target="_blank" href="https://cvl.nad.co.in/NAD/uidStudentReg.action?activePage=regactuidStudentRega"> LINK for Student Registration WITH AADHAAR to National Academic Depository (NAD)</a></p>
                             <p><a target="_blank" href="https://cvl.nad.co.in/NAD/studentInit.action?activePage=regactstudentInits">LINK for Student Registration WITHOUT AADHAAR to National Academic Depository (NAD)</a></p>
                             <p><a target="_blank" href="https://swayam.gov.in/"> MOOCs Courses through SWAYAM</a></p>
-                            <p><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc7KsX49KrPz5z33Awvyrq-hsw_DNqu6W0pYdVyuSLqqUFdMA/viewform"> Online Grievance Submission</a></p>
+                            <p><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc7KsX49KrPz5z33Awvyrq-hsw_DNqu6W0pYdVyuSLqqUFdMA/viewform"> Online Grievance Feedback form portal for students</a></p>
                         </div>
                         
                     </div>
