@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from blogs.models import news
 
 # Create your views here.
 def index(request):
@@ -8,5 +9,6 @@ def index(request):
 def about(request):
     return render(request, 'mainweb/abtus.html')
 
-def comp(request):
-    return render(request, 'mainweb/comp.html')
+def news(request):
+    lnews = news.objects.all()
+    return render(request, 'mainweb/news.html', {'news': news})

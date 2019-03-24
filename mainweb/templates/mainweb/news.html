@@ -15,7 +15,23 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/scss/_mixin.scss">
+    <link rel="stylesheet" href="/static/scss/_responsive.scss">
+    <link rel="stylesheet" href="/static/scss/_theme_color.scss">
+    <link rel="stylesheet" href="/static/scss/_variables.scss">
+    <link rel="stylesheet" href="/static/scss/style.scss">
+
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="/static/css/custom-icon.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/classy-nav.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/css/style.css">
     <style>
 .cList li {
 	color: #4f493f;
@@ -115,7 +131,7 @@
                     <div class="col-12 h-100">
                         <div class="header-content h-100 d-flex align-items-center justify-content-between">
                             <div class="academy-logo">
-                                <a href="index.html"><img src="img/bg-img/gpt-logo.jpg" height="110" width="110"></a>
+                                <a href="index.html"><img src="/static/img/bg-img/gpt-logo.jpg" height="110" width="110"></a>
                             </div>
                             <div class="heading1">
                                 <h2>Government Polytechnic, Thane. </h2>
@@ -205,7 +221,7 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/Graphic-Designer.jpg);">
+    <div class="breadcumb-area bg-img" style="background-image: url(/static/img/bg-img/Graphic-Designer.jpg);">
         <div class="bradcumbContent">
             <h2>NEWS</h2>
         </div>
@@ -216,26 +232,25 @@
     <section class="about-us-area mt-50 section-padding-100">
         <div class="container">
             <div class="row">
-<div class="col-12">
-                  <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">25th - 29th JUNE 2018</li><br>
-                  <h5>ONE WEEK AICTE & ISTE APPROVED STTP ON "RESEARCH METHODOLOGY & IT'S APPLICATION" APPROVED BY AICTE & INDIAN SOCIETY FOR TECHNICAL EDUCATION.</h5>  
-                <hr> <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">5th - 16th JUNE 2017</li><br>
-                  <h5>TWO WEEK ISTE APPROVED STTP ON "LOGICAL PROGRAMMING TECHNIQUES" APPROVED BY INDIAN SOCIETY FOR TECHNICAL EDUCATION.</h5>  
-                  <hr> <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">3rd -07th APRIL 2017</li><br>
-                  <h5>ONE WEEK ISTE APPROVED STTP ON "PROFESSIONAL SKILL DEVELOPEMENT: ORGANIZATIONAL BEHAVIOUR" APPROVED BY INDIAN SOCIETY FOR TECHNICAL EDUCATION.</h5>  
-      
-                  <hr> <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">09th - 13th JANUARY 2017</li><br>
-                  <h5>ONE WEEK MSBTE SPONSORED STTP ON "INFORMATION SECURITY" SPONSORED BY MAHARASHTRA STATE BOARD OF TECHNICAL EDUCATION.
+                <div class="col-12">
+                    <!-- news from database -->
+                    <!-- news start -->
+                  <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">
+                    25th - 29th JUNE 2018
+                    </li><br>
+                    <h5>ONE WEEK AICTE & ISTE APPROVED STTP ON "RESEARCH METHODOLOGY & IT'S APPLICATION" APPROVED BY AICTE & INDIAN SOCIETY FOR TECHNICAL EDUCATION.</h5>  
+                    <hr> 
+                    <!-- news end  -->
 
-                   </h5>  
-      
-                  <hr> <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">13th - 24th JUNE 2016</li><br>
-                  <h5>TWO WEEK ISTE APPROVED STTP ON "MATLAB & SIMULINK: RECENT TRENDS IN ENGINEERING" APPROVED BY INDIAN SOCIETY OF TECHNICAL EDUCATION.</h5>  
-      
-                  <hr> <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">21/06/2017</li><br>
-                  <h5>TRAVEL & TOURISM DEPARTMENT CELEBRATED INTERNATIONAL TOURISM DAY WITH INDIA TOURIST OFFICE MUMBAI AS A PART OF YOGA TOURISM.
+                     <!-- news start -->
+                     {% for news in news %}
+                  <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">
+                    </li><br>
+                    <h5>{{ news.news_content }}</h5>  
+                        <hr> 
+                        {& endfor &}
+                        <!-- news end  -->
 
-                    </h5>  
       
       
 
@@ -263,15 +278,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="/static/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="/static/js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
+    <script src="/static/js/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="js/active.js"></script>
+    <script src="/static/js/active.js"></script>
 </body>
 
 </html>
