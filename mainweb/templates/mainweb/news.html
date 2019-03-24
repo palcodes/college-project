@@ -243,17 +243,15 @@
                     <!-- news end  -->
 
                      <!-- news start -->
-                     {% for news in news %}
-                  <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">
+                    {% for News in newslist %}
+                    <li style="list-style-type:disc;font-size: 20px;font-weight: 600;">
+                        {{ News.news_date }}
                     </li><br>
-                    <h5>{{ news.news_content }}</h5>  
+                    <h5>{{ News.news_content }}</h5>  
                         <hr> 
-                        {& endfor &}
+                        {% endfor %}
                         <!-- news end  -->
-
       
-      
-
                 
                 </div>
             </div>
