@@ -18,4 +18,4 @@ def news(request):
     # return HttpResponse("{& for news in newslist &}  <h1>{{newslist.news}} </h1> {& endfor &}")
 
 def contact(request):
-    return HttpResponse("<h1>Contact Form</h1>") 
+    return render(request, 'mainweb/contact.html') 
