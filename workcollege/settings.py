@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'mail.apps.MailConfig',
     'teachers.apps.TeachersConfig',
     'blogs.apps.BlogsConfig',
     'mainweb.apps.MainwebConfig',

@@ -19,3 +19,12 @@ def news(request):
 
 def contact(request):
     return render(request, 'mainweb/contact.html') 
+
+def computer(request):
+    return render(request, 'mainweb/comp.html')
+
+def gymkhana(request):
+    return render(request, 'mainweb/gymkhana.html')
+
+def library(request):
+    return render(request, 'mainweb/library.html')

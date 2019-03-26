@@ -7,10 +7,13 @@ class Posts(models.Model):
     posts_content = models.TextField()
     posts_date = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return self.posts_title
+
 class News(models.Model):
     news_title = models.CharField(max_length=500)
     news_content = models.TextField()
     news_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.news_content
+        return self.news_title
