@@ -8,5 +8,6 @@ urlpatterns = [
     path('contact', views.contact, name="contact"),
     path('computer', views.computer, name='computer'),
     path('gymkhana', views.gymkhana, name='gymkhana'),
-    path('library', views.library, name='library')
+    path('library', views.library, name='library'),
+    
 ]
