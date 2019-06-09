@@ -28,3 +28,6 @@ def gymkhana(request):
 
 def library(request):
     return render(request, 'mainweb/library.html')
+
+def sports(request): 
+    return render(request, 'mainweb/sports.html')
